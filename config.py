@@ -7,11 +7,11 @@ load_dotenv()
 # VARS
 
 get_queue = {}
-BOT_TOKEN = getenv("BOT_TOKEN", "2120048918:AAEqjhz1ZnI3mE6qeoT8auZSSSBHb470Hv8")
+BOT_TOKEN = getenv("BOT_TOKEN", "")
 API_ID = int(getenv("API_ID", "8236321"))
 API_HASH = getenv("API_HASH", "974c0347e3de1ba02b540f07fb970e55")
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "900"))
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://BOT34:BOT34@cluster0.2dh9k.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "")
 SUDO_USERS = list(map(int, getenv("SUDO_USERS", "1323020756").split()))
 OWNER_ID = list(map(int, getenv("OWNER_ID", "1323020756").split()))
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001761546186"))
@@ -37,7 +37,7 @@ else:
 if str(getenv("STRING_SESSION1")).strip() == "":
     STRING1 = str(None)
 else:
-    STRING1 = str(getenv("STRING_SESSION1", "BQAVICuKNSpQHJpw_UKyGJmr7RtsgwUEzYwyLV2_Ik-yosKyqStDa9A0TrH_Ecwpuubg9swtbvp8Wr2ElF1q3WYWL2A1qKcmSs_S2R3ZR_MRUxcKSLq_W7L9g3CKFO0-XksqUEI7woGxK8clFBQP94fSGJpVPBTaKQS_UwWPfxZN_8rrj_cijzQjN60RvS2ky-VqQHIyX2qhKTv5S0FwwXJL08q1pTYYbc9Xm0xR4GjWDNR8rGRM0JOU9MOWtAS5Z4VdlotPoUMMyZf0olIBtxylYs5QXKMF7AzrPUx0LzS54-xmjhd3A4eUkyKYSnA_WHiYLlVhkLxlBIPEF_0Y8CQLAAAAAHdzQigA"))
+    STRING1 = str(getenv("STRING_SESSION1", "")) 
 
 if str(getenv("STRING_SESSION2")).strip() == "":
     STRING2 = str(None)
@@ -62,4 +62,4 @@ else:
 if str(getenv("LOG_SESSION")).strip() == "":
     LOG_SESSION = str(None)
 else:
-    LOG_SESSION = str(getenv("LOG_SESSION", "BQAVICuKNSpQHJpw_UKyGJmr7RtsgwUEzYwyLV2_Ik-yosKyqStDa9A0TrH_Ecwpuubg9swtbvp8Wr2ElF1q3WYWL2A1qKcmSs_S2R3ZR_MRUxcKSLq_W7L9g3CKFO0-XksqUEI7woGxK8clFBQP94fSGJpVPBTaKQS_UwWPfxZN_8rrj_cijzQjN60RvS2ky-VqQHIyX2qhKTv5S0FwwXJL08q1pTYYbc9Xm0xR4GjWDNR8rGRM0JOU9MOWtAS5Z4VdlotPoUMMyZf0olIBtxylYs5QXKMF7AzrPUx0LzS54-xmjhd3A4eUkyKYSnA_WHiYLlVhkLxlBIPEF_0Y8CQLAAAAAHdzQigA"))
+    LOG_SESSION = str(getenv("LOG_SESSION", "")) 
